@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Esercitazione 06 06 23</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>HTML</h1>
+        <h2>Esercitazione <a href="./ripasso.html" target="_blank" rel="noopener noreferrer"
+                title="ripasso html">HTML</a></h2>
+    </header>
+
+    <main>
+        <p>Formattazioni e tag</p>
+        <code>&lt;!-- questo è un commento in html (ispeziona la pagina per verificare!) --&gt;</code>
+        <!-- NO! Questo è un commento in html --> <br>
+        <hr>
+        Il tag <code> &lt;hr&gt; </code> (horizontal rule) indica la riga orizzontale, <br>
+        mentre <code> &lt;br&gt; </code>
+        (break) permette ad un testo di andare a capo (interruzione di riga nel testo).
+
+
+        <hgroup>
+            <h1>Intestazioni</h1>
+            <p>H1, H2, H3, H4, H5, H6 - Rappresentano i sei livelli di intestazioni di sezione.<br>
+                &lt;h1&gt; è il livello di sezione più alto e &lt;h6&gt; è il più basso.</p>
+        </hgroup>
+        <p>L'elemento hgroup consente di raggruppare un'intestazione con qualsiasi contenuto secondario, come
+            sottotitoli,<br>
+            un titolo alternativo o una tagline. Ognuno di questi tipi di contenuto
+            è rappresentato come un elemento p
+            all'interno di hgroup <br></p>
+        <h1>Questo è un titolo h1</h1>
+        <h2>Questo è un titolo h2</h2>
+        <h3>Questo è un titolo h3</h3>
+        <h4>Questo è un titolo h4</h4>
+        <h5>Questo è un titolo h5</h5>
+        <h6>Questo è un titolo h6</h6>
+
+
+        <hr>
+        <p>FORMATTAZIONI PRINCIPALI: <br>
+            Gli elementi contrassegnati con l'asterisco possono essere definiti nei CSS. <br><br>
+            <b>Bold</b> text (grassetto) <code> &lt;b&gt; text &lt;/b&gt;</code> * <br><br>
+            <strong>Strong</strong> text (importante) <code> &lt;strong&gt; text &lt;/strong&gt;</code> ha un
+            significato semantico.<br><br>
+            <i>Italic</i> text (corsivo) <code> &lt;i&gt; text &lt;/i&gt;</code> * <br><br>
+            <em>Emphasized</em> text (enfatizzato) <code> &lt;em&gt; text &lt;/em&gt;</code> ha un significato
+            semantico.<br><br>
+            <b><i>Testo in grassetto e corsivo, i tag possono essere nidificati</i></b>
+            <code> &lt;b&gt;&lt;i&gt; text &lt;/i&gt;&lt;/b&gt;</code> *
+            <br><br>
+            <u>Underline text</u> (sottolineato) <code> &lt;u&gt; text &lt;/u&gt;</code> * <br>
+        </p>
+        <hr>
+        <p> ALTRE FORMATTAZIONI: <br><br>
+            <code> &lt;code&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit.  &lt;/ins&gt;</code><br>
+            Code: Visualizza i suoi contenuti con uno stile inteso a indicare che il testo è un breve frammento di
+            codice informatico. <br>
+            Per impostazione predefinita, il testo del contenuto viene visualizzato utilizzando il carattere a
+            spaziatura fissa. <br><br>
+
+            <code> &lt;samp&gt; Keyboard not found  &lt;/samp&gt;</code><br>
+            <samp>Keyboard not found <br>
+                Press F1 to continue</samp>
+        </p>
+        Viene utilizzato per racchiudere testo in linea che rappresenta l'output di esempio (o citato) <br>
+        da un programma per computer. I suoi contenuti sono in genere resi utilizzando il carattere a spaziatura fissa.
+        <br><br>
+        <br>
+
+        <s>strikethrough</s> <code>&lt;s&gt; text &lt;/s&gt</code><br>
+        <p>
+            Visualizza il testo con un barrato o una linea che lo attraversa. <br>
+            Si utilizza l'elemento <code>&lt;s&gt;</code> per rappresentare cose che non sono più rilevanti o non più
+            precise. <br>
+            Tuttavia, non è appropriato quando si indicano modifiche al documento; (utilizzare del e ins, a seconda dei
+            casi).
+        </p>
+        <del>Deleted text</del> <code>&lt;del&gt; text &lt;/del&gt</code> sostituisce il tag: strike
+        <code> &lt;strike&gt; text &lt;/strike&gt;</code> * <br>
+        <ins>Inserted text</ins> <code> &lt;ins&gt; text &lt;/ins&gt;</code><br><br>
+
+        <hr>
+        <!-- testo evidenziato -->
+        <mark>Highlighted</mark> text (testo evidenziato) <code> &lt;mark&gt; text &lt;/mark&gt;</code> *
+        <hr>
+        <!-- abbreviazione -->
+        <code> &lt;abbr title="abbreviazione"&gt;Abbr&lt;/abbr&gt; </code> <br> <br>
+        <abbr title="abbreviazione">Abbr</abbr> text: ( al passaggio del mouse si vedrà la parola per la sua intera
+        lunghezza) <br>
+        Rappresenta un'abbreviazione o un acronimo <br>
+        <hr>
+        <!-- blockquote e quote -->
+        <code> &lt;blockquote&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit &lt;/blockquote&gt;</code>
+        <br>
+        <blockquote>Blockquote Text: Lorem ipsum dolor sit amet consectetur adipisicing elit.</blockquote>
+        Indica che il testo allegato è una citazione estesa. Di solito, questo viene reso visivamente mediante
+        indentazione. <br><br>
+
+        <code> &lt;cite&gt; Cite &lt;/citazione&gt;</code> <br>
+        <cite>Cite: Lorem ipsum</cite> <br>
+        Utilizzato per contrassegnare il titolo di un'opera creativa citata. Il riferimento può essere in forma
+        abbreviata <br>
+        secondo le convenzioni appropriate al contesto relative ai metadati di citazione.
+        <br><br>
+        <code> &lt;q&gt; Quote text &lt;/q&gt;</code> <br>
+        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit.</q> <br>
+        Quote (testo all'interno delle virgolette). Indica che il testo allegato è una breve citazione in linea. <br>
+        La maggior parte dei browser moderni lo implementa racchiudendo il testo tra virgolette. <br>
+        Questo elemento è destinato a citazioni brevi che non richiedono interruzioni di paragrafo; <br>
+        per citazioni lunghe usa l'elemento blockquote. <br><br>
+
+        <code> &lt;dfn&gt;definizione&lt;dfn&gt;</code> <br>
+        <dfn>definizione</dfn><br><br>
+        Utilizzato per indicare il termine definito nel contesto di una frase o frase di definizione. <br>
+
+        <hr>
+
+        Il tag <b>kdb</b> definisce un input da tastiera: es. <kbd>CTRL + C = COPY</kbd> <br>
+        <code> &lt;kdb&gt; text &lt;/kdb&gt;</code> <br>
+        <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p><br>
+
+        <small>smaller text</small> & normal text &nbsp;
+        <code> &lt;small&gt;text&lt;small&gt;</code> <br><br>
+
+        sup text es: WWW<sup>1</sup> (nota) &nbsp;
+        <code> WWW &lt;sup&gt;1&lt;/sup&gt;</code> <br><br>
+
+        sub text es: H<sub>2</sub>O &nbsp;
+        <code> H&lt;sub&gt;2&lt;/sub&gt;O</code> <br><br>
+
+        Il tag <b>bdo</b> inverte la direzione del testo: This text will go right-to-left: <bdo dir="rtl">This text
+            will go right-to-left</bdo><br>
+        <code> &lt;bdo dir="rtl"&gt; Questo testo va da destra a sinistra &lt;/bdo&gt;</code> <br>
+        &nbsp; es: <bdo dir="rtl">Questo testo va da destra a sinistra</bdo> <br>
+        <br>
+
+        <!--- <p>
+        Loremipsumdolorsitame<wbr>tconsecteturadipisicingelit.Veritatisveniamnisipossimusharumfugitatofficiisanimi,
+        repudiandaeexconsequaturquaera<wbr>tquodeius,avoluptateveroab.<wbr>Alias,oditrepellendus?
+
+        Rappresenta un'opportunità di interruzione di parola: 
+        una posizione all'interno del testo in cui il browser può facoltativamente interrompere una riga, 
+        sebbene le sue regole di interruzione di riga non creerebbero altrimenti un'interruzione in quella posizione.
+        </p> --->
+
+        <hr>
+        <!--- Lista Non Ordinata --->
+        <p>Questo è un elenco non ordinato: UnOrder List</p>
+        <ul type="circle">
+
+            <!--- type ="square" / "circle" / "disc" --->
+            <li>Genova</li>
+            <li>La Spezia</li>
+            <li>Savona</li>
+        </ul>
+
+        <!--- Lista Ordinata --->
+        <p>Questo è un elenco ordinato - Order List</p>
+        <ol>
+            <li>Italia</li>
+            <li>Francia</li>
+            <li>Germania</li>
+        </ol>
+
+        <!--- è possibile specificare l'attributo Start --->
+        <p>Questo è un elenco ordinato che parte da 8</p>
+        <ol start="8">
+            <li>Italiano</li>
+            <li>Francese</li>
+            <li>Tedesco</li>
+        </ol>
+
+        <!--- è possibile aggiungere il type --->
+        <p>Questo è un elenco ordinato Alfabeticamente</p>
+        <ol start="1" type="a">
+            <li>Regno Unito</li>
+            <li>Irlanda</li>
+            <li>Islanda</li>
+        </ol>
+
+        <!--- è possibile specificare l'attributo start--->
+        <p>Questo è un elenco ordinato con Numeri Romani</p>
+        <ol start="1" type="I">
+            <li>Milano</li>
+            <li>Roma</li>
+            <li>Firenze</li>
+            <li>Torino</li>
+        </ol>
+
+        <!--- Una Lista dentro la Lista --->
+        <p>Questa è una Lista Annidata</p>
+        <ol start="1" type="1">
+            <li>Nord Italia</li>
+            <li>Centro Italia
+                <ol start="1" type="a">
+                    <li>Perugia</li>
+                    <li>Arezzo</li>
+                    <li>Firenze</li>
+                </ol>
+            </li>
+            <li>Sud Italia</li>
+        </ol>
+        <hr>
+        <p>
+            <b>Maledette tabelle! posso dirlo?!</b><br>
+            tabella 1 <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Titolo 1</th><!-- contenuto titolo riga -->
+                    <th>Titolo 2</th>
+                    <th>Titolo 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!-- riga -->
+                    <td>contenuto 1</td>
+                    <td>contenuto 2</td>
+                    <td>contenuto 3</td> <!-- contenuto colonna -->
+                </tr>
+                <tr>
+                    <td>contenuto 4</td>
+                </tr>
+                <tr>
+                    <td>contenuto 5</td>
+                    <td>contenuto 6</td>
+                </tr>
+            </tbody>
+        </table>
+        </p>
+
+        tabella 2 - altro esempio (magari da non fare)<br>
+        <table>
+            <tr>
+                <th>Titolo 1</th>
+            </tr>
+            <tr>
+                <th>Titolo 2</th>
+            </tr>
+            <tr>
+                <th>Titolo 3</th>
+                <td>contenuto 3</td>
+            </tr>
+            <tr>
+                <td>contenuto senza titolo</td>
+            </tr>
+            <tr>
+                <th>Titolo 5</th>
+            </tr>
+            <tr>
+                <th>Titolo 6</th>
+                <td>contenuto 6</td>
+            </tr>
+            <tr>
+                <td>contenuto senza titolo 2</td>
+            </tr>
+        </table>
+        <hr>
+        <!--- Fine delle Liste --->
+
+        <!-- termine definito quando utilizzato in una definizione -->
+        <!-- Gli elenchi di descrizioni utilizzano un wrapper (involucro) diverso rispetto agli altri tipi di elenco — <dl>; 
+            inoltre ogni termine è racchiuso in un elemento <dt> (description term - termine descrittivo) 
+            e ogni descrizione è racchiusa in un elemento <dd> (description definition - definizione descrittiva). -->
+        <p>
+            Description Term <b>dt</b> e Description Definition <b>dd</b> <br>
+        <dl>
+            <dt>HTML semantico</dt>
+            <dd>
+                Usa gli elementi in base al loro significato <b>semantico</b>, non al loro aspetto.
+            </dd>
+        </dl>
+        </p>
+
+    </main>
+    <br>
+    <br>
+    <footer>
+        <hr>
+        <a href="./index.html"> <b>HOME</b></a> -
+        <a href="./ripasso.html"> <b>Lezione 1</b></a> -
+        <a href="./formattazioni.html"> <b>Formattazioni</b></a> -
+        <a href="./contenuti.html"> <b>Contenuti</b></a> -
+        <a href="./contatti.html"> <b>Contatti</b></a>
+        <hr><br>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- CTRL+K + C commenta -->
+<!-- CTRL+K + U toglie il commento -->
+<!-- SHIFT+ALT + F formattazione  -->

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Esercitazione 06 06 23</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>HTML</h1>
+        <h2>Esercitazione HTML</h2>
+    </header>
+
+    <main>
+        <p>
+
+        <h4>
+            HTML supporta varie risorse multimediali come immagini, audio e video.
+        </h4>
+
+        <!-- <area shape="" coords="" href="" alt=""> -->
+
+        <div>
+            <p>Inserimento Immagini:</p><br>
+            <img src="./assets/LG2.jpg" width="560" alt="Lofi Girl" title="LoFi Girl img src">
+            <br><br>
+
+            <img src="./assets/mona-loading-dimmed.gif" alt="github loading" title="github loading" height="50"> <br>
+            <img src="#" alt="Questa immagine non è disponibile" title="qui non troverai nessuna immagine">
+            <br><br>
+
+            <!-- vedi https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+
+            Inserire le immagini con <b>img</b> può andar bene. <br>
+            Contiene il contenuto ed è ben stilizzabile usando i CSS. <br>
+            Ma qui c'è un problema: non c'è nulla che colleghi semanticamente l'immagine alla sua didascalia, <br>
+            il che può causare problemi agli screen reader. <br>
+            Ad esempio, quando hai 50 immagini e didascalie, quale didascalia va con quale immagine? <br>
+            <br>
+            <!--- FIGURE --->
+            Una soluzione migliore consiste nell'usare gli elementi HTML <b>figure</b> e <b>figcaption</b>. <br>
+            Questi sono creati esattamente per questo scopo: fornire un contenitore semantico per le figure<br>
+            e collegare chiaramente la figura alla didascalia.<br>
+
+            <figure style="background-color: lightgray;">
+                <img src="./assets/LG.png" width="560" alt="Lofi Girl" title="LoFi Girl figure con figcaption">
+                <figcaption>LoFi Girl - Beats to Study</figcaption> <!--  didascalia associata all'elemento figure -->
+            </figure>
+        </div>
+
+        <audio src=""></audio>
+
+        <!-- 
+        <figure>
+            <figcaption>Get browser details using <code>navigator</code>.</figcaption>
+            <pre>
+codice html ?
+            </pre>
+        </figure>
+         -->
+
+        <figure>
+            <figcaption><b>Esempio</b> <code>code snippet</code>con figure e figcaption.</figcaption>
+            <pre>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Veritatis veniam nisi possimus harum fugit at officiis animi,
+                repudiandae ex consequatur quaerat quod eius, 
+                a voluptate vero ab. Alias, odit repellendus?
+            </pre>
+        </figure>
+
+        <figure>
+            <figcaption><b>Esempio</b> blockquote con figure e figcaption</figcaption>
+            <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis veniam nisi possimus harum fugit at officiis animi.
+            </blockquote>
+        </figure>
+
+        <br><br>
+
+        <p>
+            Inserimento con iFrame: <br>
+
+            <!--- iFRAME --->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                title="Segui LoFi Girl su YouTube" allow="accelerometer; 
+                        autoplay;              
+                        clipboard-write;  
+                        encrypted-media; 
+                        gyroscope; 
+                        picture-in-picture; 
+                        web-share" allowfullscreen>
+            </iframe>
+            <!--- allow = consenti
+                        accelerometro; 
+                        riproduzione automatica; 
+                        scrittura negli appunti; 
+                        supporto crittografato; 
+                        giroscopio; 
+                        picture-in-picture; 
+                        web-share
+                        consentire lo schermo intero
+                        --->
+<br><br>     
+            <!--- mappa embed --->
+            <iframe id="inlineFrameExample"
+                    title="Inline Frame Example"
+                    width="425" height="350"
+                    scolling="no"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=12.386846244335176%2C43.11153783062046%2C12.390295565128328%2C43.11276944976033&amp;layer=mapnik">
+                </iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/43.11215/12.38857">Visualizza la mappa di Perugia</a></small>
+
+        <h3>Below is a simple example</h3>
+        <video src="#" title="difatti non c'è nessun video disponibile" alt="nessun video disponibile" type="video" controls>
+            <p> <a href="#">link to the video</a></p>
+        </video>
+        </p>
+
+        <p>
+            <video width="320" height="240" title="difatti non c'è nessun video disponibile" alt="nessun video disponibile" controls>
+                <source src="#" type="video">
+            </video>
+        </p>
+
+        <!---   
+        <area>
+        Definisce un'area all'interno di una mappa immagine con aree selezionabili predefinite. 
+        Una mappa immagine consente di associare aree geometriche su un'immagine a un collegamento ipertestuale.  
+        --->
+
+        <!---
+        <map>
+        Utilizzato con gli elementi <area> per definire una mappa immagine (un'area di collegamento cliccabile).
+        -->
+
+        <!--- TIME --->
+        <p>Time Tag</p>
+        <p>I Cure festeggeranno il loro 40° anniversario il <time datetime="2018-07-07">7 luglio</time> all'Hyde Park di
+            Londra.</p>
+        <p>Il concerto inizia alle <time datetime="20:00">20:00</time> e potrai goderti la band per almeno <time
+                datetime="PT2H30M">2h 30m</time>.</p>
+
+        Rappresenta un determinato periodo di tempo. <br>
+        Può includere l'attributo datetime per tradurre le date in un formato leggibile dalla macchina, <br>
+        consentendo migliori risultati del motore di ricerca o funzionalità personalizzate come i promemoria.
+        </p>
+
+<hr>
+<p>
+    <b>OBJECT</b><br>
+    <object type="application/pdf" data="./assets/4-PDF-A.pdf" width="420" height="500" >
+    </object>
+
+</p>
+    </main>
+
+    <footer>
+        <br>
+        <hr>
+        <a href="./index.html"> <b>HOME</b></a> -
+        <a href="./ripasso.html"> <b>Lezione 1</b></a> -
+        <a href="./formattazioni.html"> <b>Formattazioni</b></a> -
+        <a href="./contenuti.html"> <b>Contenuti</b></a> -
+        <a href="./contatti.html"> <b>Contatti</b></a>
+        <hr><br>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- CTRL+K + C commenta -->
+<!-- CTRL+K + U toglie il commento -->
+<!-- SHIFT+ALT + F formattazione  -->

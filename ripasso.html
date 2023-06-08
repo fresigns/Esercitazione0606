@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Esercitazione 06 06 23</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>HTML</h1>
+        <h2>Cos'è l'html e come funzionano i tag</h2>
+    </header>
+
+    <main>
+        <p>
+        <h3>Torna alla <a href="./index.html" target="_blank" rel="noopener noreferrer" title="home page">Home Page</a>
+        </h3>
+        </p>
+        <p>
+            <strong>HyperText Markup Language</strong> (linguaggio di contrassegno per ipertesti) <br>
+            È un linguaggio di marcatura che permette di indicare, attraverso appositi <b>tag </b> (etichette), <br>
+            come disporre gli elementi all'interno di una pagina web, stabilire i collegamenti (link) tra le pagine,<br>
+            includere immagini, testi, etc.
+            . <br>
+        </p>
+        <p>
+            Questi tag hanno la caratteristica di essere inclusi tra parentesi angolari. <br>
+        </p>
+        <p>
+            Il linguaggio HTML ha due tipi principali di tag: tag vuoti e tag contenitori.<br>
+            I tag vuoti servono a formattare le pagine, non hanno il tag finale di chiusura e non racchiudono alcun
+            testo al loro interno.<br>
+            I tag contenitori sono utilizzati per manipolare i dati posti al loro interno e sono composti da: tag
+            iniziale, contenuto su cui agisce il tag e tag di chiusura.
+        </p>
+        Di seguito vediamo la struttura base di un documento HTML e relativi tag:
+        <pre><!-- nota esplicativa -->
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt; Titolo della pagina &lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;h1&gt;Titolo &lt;/h1&gt;
+        &lt;p&gt; Paragrafo &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <p>
+            All'inizio del codice sorgente e dunque prima del tag &lt;html&gt; viene inserito il contrassegno
+            <b>&lt;!DOCTYPE html&gt;</b> <br>
+            informazione che serve al browser web per capire che tipo di documento sta analizzando. <br>
+        </p>
+
+        <p> Come possiamo vedere nell'esempio sopraindicato la struttura si suddivide principalmente in due
+            macro-sezioni: <b>HEAD</b> e <b>BODY</b> <br>
+            Head contiene le informazioni che formano l'intestazione di documento HTML, <br>
+            al suo interno sono contenuti i <b>metadati</b>. <br>
+            I metadati contengono informazioni sulla pagina, ad esempio il titolo, includono fogli di stile, script e
+            altre informazioni utili al browser e ai motori di ricerca (es. keywords). <br>
+            Stili e script possono essere inclusi nella pagina html (es. foglio di stile interno) o essere richiamati
+            tramite un collegamento esterno (es. foglio di stile esterno). <br>
+            È anche possibile definire le regole di stile all'interno dell'elemento html utilizzando l'attributo
+            <i>style</i> (es. foglio di stile esterno). <br>
+        </p>
+
+        <p>
+            All'interno di Body invece, troveremo tutti gli elementi presenti nella pagina e la loro collocazione. <br>
+            Durante la prima lezione abbiamo già visto tre principali tag necessari per la suddivisione in sezioni della
+            nostra pagina:
+            header, main e footer. <br><br>
+            <b>Header</b> è un elemento utile per identificare le intestazioni presenti all'interno del nostro sito,
+            <br>
+            dunque sarà utilizzato come elemento contenitore dell'intestazione dove troviamo titolo, logo e navigazione
+            principale. <br><br>
+            <b>Main</b> è la parte principale dove saranno collocati i contenuti della pagina e le relative
+            sotto-sezioni <br><br>
+            Il <b>Footer</b> invece rappresenta un piè di pagina, dove in genere sono contenute informazioni
+            sull'autore, <br>
+            i dati sul copyright o collegamenti a documenti correlati. <br><br>
+        </p>
+
+        <!--
+        <p> 
+        Il tag <b>html</b> rappresenta la radice (elemento di livello superiore) di un documento HTML, pertanto viene definito elemento root. <br>
+        Tutti gli altri elementi devono essere discendenti di questo elemento. <br>
+        L'elemento <code> &lt;base&gt;</code> specifica l'URL di base da utilizzare per tutti gli URL relativi in un documento.<br>
+        <code> &lt;link&gt;</code> Specifica le relazioni tra il documento corrente e una risorsa esterna. <br>
+        Questo elemento è più comunemente usato per collegarsi ai CSS, ma è anche usato per stabilire le icone del sito.<br>
+        </p> 
+-->
+
+    </main>
+
+    <footer>
+        <hr>
+        <a href="./index.html"> <b>HOME</b></a> -
+        <a href="./ripasso.html"> <b>Lezione 1</b></a> -
+        <a href="./formattazioni.html"> <b>Formattazioni</b></a> -
+        <a href="./contenuti.html"> <b>Contenuti</b></a> -
+        <a href="./contatti.html"> <b>Contatti</b></a>
+        <hr><br>
+    </footer>
+
+    <!-- CTRL+K + C commenta -->
+    <!-- CTRL+K + U toglie il commento -->
+    <!-- SHIFT+ALT + F formattazione  -->
+</body>
+
+</html>

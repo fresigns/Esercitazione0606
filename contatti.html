@@ -1,0 +1,172 @@
+<!-- questo è un commento html -->
+
+<!--
+Emmet Abbreviation-> ! + tab
+permette di inserire automaticamente il codice per poter creare un documento .html 
+-->
+
+<!DOCTYPE html> <!-- DOCTYPE: è una dichiarazione, serve ad indicare al browser il tipo di documento -->
+<html lang="it" dir="ltr"> <!-- indica la lingua e la direzione del testo -- left fo right -->
+
+<head> <!-- head contiene i meta tag, il title e lo style -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti</title>
+</head>
+
+<body> <!-- dentro il body andrà il tutto contenuto della pagina -->
+  <header>
+    <h1>Contatti</h1>
+  </header>
+
+  <main><!--inizio main-->
+
+    <p>
+
+      <button>Search</button> &nbsp; <input type="search"><br> <!-- Cerca -->
+      <br>
+      Inserisci i tuoi dati nel form oppure <button><a href="./index.html" target="_blank" rel="noopener noreferrer"
+          title="home page">Torna all'Home Page</a></button><br>
+    </p>
+
+    <form action="#"><!-- modulo -->
+      <fieldset><!-- delimitazione modulo -->
+        <legend>Compilare tutti i campi</legend>
+
+        <label for="nome"><b>Nome</b></label>
+        <input type="text" id="nome" name="nome" placeholder="Mario" maxlength="30">
+
+        <!-- 
+    <label for="nome">Nome</label> ---------------etichetta
+    <input type="text"
+             id="nome"     ------------ id: serve a personalizzare la label
+             name="nome">  ------------ attributo name: serve per la trasmissione di dati al DB
+    il for="#" deve essere uguale all'id="#" -->
+
+        <label for="cognome"><b>Cognome</b></label>
+        <input type="text" id="cognome" name="cognome" placeholder="Rossi" minlength="3" maxlength="30">
+        <br> <br> <!-- Nome e Cognome -->
+
+        <label for="email"><b>E-mail</b></label>
+        <input type="email" id="email" name="email"> <!-- es. possiamo aggiungere required -->
+        <br><br>
+
+        <label for="phone"><b>Telefono</b></label>
+        <input type="phone" id="phone" name="phone" maxlength="10">
+
+        <!--------------------------------------------------------------->
+        <p>Sesso</p>
+        <input type="radio" name="sesso" id="maschile" value="maschile">
+        <label for="maschile">Maschile</label>
+        <input type="radio" name="sesso" id="femminile" value="femminile">
+        <label for="femminile">Femminile</label>
+        <input type="radio" name="sesso" id="altro" value="altro">
+        <label for="altro">Altro</label>
+        <br>
+        <!--------------------------------------------------------------->
+
+        <!-- 
+      <label for="birthday">Compleanno:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      -->
+
+        <p>Hobbies</p>
+        <input type="checkbox" name="disegnare" id="hobby" value="disegnare">
+        <label for="disegnare">Disegnare</label><br>
+        <input type="checkbox" name="leggere" id="hobby" value="leggere">
+        <label for="leggere">Leggere</label><br>
+        <input type="checkbox" name="scrivere" id="hobby" value="scrivere">
+        <label for="scrivere">Scrivere</label><br>
+        <br>
+
+        <hr>
+        <!-- INPUT time -->
+        <p>
+          <label for="appt">Scegli un orario per la tua riunione:</label>
+          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required><br>
+          <small>L'orario d'ufficio è dalle 9:00 alle 18:00</small>
+        </p>
+
+        <label for="subject">
+          <b>Oggetto della mail</b>&nbsp;</label>
+        <select name="subject" id="subject">
+          <option value="support">Support</option>
+          <option value="sales">Sales</option>
+          <option value="report a bug">Report a bug</option>
+        </select>
+
+        <br><br>
+        <label for="messaggio">Scrivi il tuo messaggio dentro la textarea sottostante:</label><br>
+        <textarea name="messaggio" id="messaggio" 
+                  cols="40" rows="3"
+                  minlength="4" maxlength="200"></textarea>
+        <br><br>
+        <textarea name="message" rows="5" class="#" placeholder="Oppure scrivi qui il tuo messaggio"></textarea>
+        <br><br>
+
+        <label for="file">Upload a file</label>
+        <input type="file" name="file" id="file" multiple>
+        <br><br>
+
+        <label for="agreement"> <!-- accordo -->
+          <input type="checkbox" name="agreement" id="agreement" required="required">
+          <a href="https://www.axiaformazione.it/privacy-policy.pdf" target="#">Informativa Privacy</a>
+        </label>
+        <br><br>
+
+        <p>
+        <!-- due tipi di input, disabilitato e non -->
+        <!-- l'utilizzo dell'attributo disabled impedisce all'utente finale di immettere testo nella casella di immissione -->
+        <input type="text" disabled />
+        <!-- l'input di testo è consentito, in quanto non contiene l'attributo disabled -->
+        <input type="text" />
+      </p>
+
+
+        <input type="submit"><!-- "Invia richiesta" al DB quando collegato -->
+        <!-- 
+        <input type="submit" value="Invia Richiesta"> 
+      -->
+      </fieldset>
+    </form>
+
+    <hr>
+
+    <form method="post">
+      <fieldset>
+        <legend>Accetti i termini per continuare?</legend>
+        <label><input type="radio" name="radio" value="yes" /> Yes</label>
+        <label><input type="radio" name="radio" value="no" /> No</label>
+        <label><input type="radio" name="radio" value="f" /> Ci penso</label>
+      </fieldset>
+
+    </form>
+
+  </main><!--fine main-->
+
+  <footer><!--inizio footer-->
+
+  </footer><!--fine footer-->
+</body>
+
+</html>
+
+
+<footer>
+  <hr>
+  <a href="./index.html"> <b>HOME</b></a> -
+  <a href="./ripasso.html"> <b>Lezione 1</b></a> -
+  <a href="./formattazioni.html"> <b>Formattazioni</b></a> -
+  <a href="./contenuti.html"> <b>Contenuti</b></a> -
+  <a href="./contatti.html"> <b>Contatti</b></a>
+  <hr><br>
+</footer>
+
+</body>
+
+</html>
+
+<!-- CTRL+K + C commenta -->
+<!-- CTRL+K + U toglie il commento -->
+<!-- SHIFT+ALT + F formattazione  -->
